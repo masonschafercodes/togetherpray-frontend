@@ -108,6 +108,10 @@ body{
   margin: 0;
 }
 
+.m-0{
+  margin: 0 auto;
+}
+
 .t-align-c{
   text-align: center;
 }
@@ -120,9 +124,25 @@ body{
   padding-top: 65px;
 }
 
+.pt-25{
+  padding-top: 25px;
+}
+
 .p-font-sm{
   font-family: 'PT Serif Caption', serif;
   font-size: 14px;
+}
+
+.mt-50{
+  margin-top: 50px;
+}
+
+.mt-25{
+  margin-top: 25px;
+}
+
+.p-32{
+  padding: 32px;
 }
 
 .ml-25{
@@ -147,4 +167,40 @@ body{
 
 .wd-50{
   width: 50%;
+}
+
+.base-color{
+  color: #706fd3;
+}
+
+.request-button{
+  background-color: #706fd3 !important;
+  opacity: .5;
+}
+
+.request-button:hover{
+  background: #40407a !important;
+  opacity: 1;
+}
+ 
+.prayer-bg{
+  background-color: #AEA8A8;
+  opacity: .5;
+}
+
+.color-wht{
+  color: white;
+}
+
+.rounded{
+  border-radius: 3px;
+}
+
+.ml-15{
+  margin-left: 15px !important;
+}
+
+.p-font-m{
+  font-family: 'PT Serif Caption', serif;
+  font-size: 16px;
 }

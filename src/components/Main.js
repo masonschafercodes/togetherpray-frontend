@@ -4,6 +4,7 @@ import Home from './Home';
 import Request from './Request';
 import Read from './Read';
 import Login from './Login';
+import NewRequest from './NewRequest';
 
 const Main = () => (
     <Switch>
@@ -11,6 +12,7 @@ const Main = () => (
         <Route path="/request" component={Request} />
         <Route path="/read" component={Read} />
         <Route path="/login" component={Login} />
+        <Route path="/newrequest" component={NewRequest} />
 
     </Switch>
 )
