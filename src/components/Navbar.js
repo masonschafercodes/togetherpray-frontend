@@ -20,17 +20,16 @@ import firebase from 'firebase';
                 <li style={{float: 'left'}}>
                   {this.state.isSignedIn ?
                      <div style={{float: 'left', display: 'flex'}}>
-                        <a>Logged in as: <strong>{firebase.auth().currentUser.displayName}</strong></a>
-                        <a href="/" onClick={() => firebase.auth().signOut()}>Log Out</a>
+                        <a href="/" onClick={() => firebase.auth().signOut()}><strong>{firebase.auth().currentUser.displayName} &#8676;</strong></a>
                       </div>
                     :
                       <a href="/login">Login</a>
                 }
 
                 </li>
-                <li><a href="/">Verse With Us</a></li>
+                <li><img src="https://i.ibb.co/KKBgBMJ/praytogether.png" alt="togetherpray app logo" /></li>
                 <li><a href="/">Home</a></li>
-                <li><a href="/interact">Interact</a></li>
+                <li><a href="/request">Request</a></li>
                 <li><a href="/read">Read</a></li>
             </ul>
           </div>

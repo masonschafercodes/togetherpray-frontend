@@ -4,7 +4,7 @@ import NavigationBar from './Navbar';
 
 import firebase from 'firebase';
 
-class Interact extends Component{
+class Request extends Component{
     state={isSignedIn: true};
 
     componentDidMount = () => {
@@ -20,7 +20,7 @@ class Interact extends Component{
             </nav>
             {this.state.isSignedIn ?
                 <div>
-                    <h1>Interact</h1>
+                    <h1>Request</h1>
                 </div>
                     :
                 <Redirect to='/login' />
@@ -32,4 +32,4 @@ class Interact extends Component{
     }
 }
 
-export default Interact;
+export default Request;

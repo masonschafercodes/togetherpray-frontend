@@ -1,10 +1,10 @@
 body{
-  padding-top: 65px;
+  padding-top: 63px;
 }
 
 /* Jumbotron Styling */
 .jumbotron{
-  background: #40407a !important;
+  background: RGBA(64, 64, 122, .5) !important;
   color: white;
 }
 
@@ -12,20 +12,23 @@ body{
   font-family: 'PT Serif Caption', serif;
 }
 
+
 .jumbotron-button{
+  border-style: none;
   background-color: #706fd3 !important;
 }
 
 .jumbotron-button:hover{
   background-color: #f7f1e3 !important;
   color: #706fd3 !important;
+  border-style: none;
 }
 
 /* Navbar Styling */
 
 .nav-font{
-  font-family: 'PT Serif', serif;
-  font-weight: 700;
+  font-family: 'PT Serif Caption', serif;
+  font-weight: 500;
   font-size: 18px;
 }
 
@@ -34,8 +37,7 @@ body{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #706fd3;
-  border-bottom: 3px solid #2c2c54;
+  background-color: #fff;
   position: fixed;
   top: 0;
   width: 100%;
@@ -47,10 +49,23 @@ body{
 
 .navbar-design li a {
   display: block;
-  color: #fff;
+  color: #706fd3;
   text-align: center;
   padding: 18px 20px;
   text-decoration: none;
+}
+
+.navbar-design h6 {
+  color: #706fd3;
+  text-align: center;
+  padding: 18px 20px;
+  font-size: 18px;
+}
+
+.navbar-design img {
+  display: block;      
+  padding: 10px 13px;
+  text-align: center;
 }
 
 .navbar-design li a:hover {
@@ -84,4 +99,52 @@ body{
 
 .login-button:hover{
   background: #40407a !important;
+}
+
+/* Individual Styles */
+
+.center{
+  text-align: center;
+  margin: 0;
+}
+
+.t-align-c{
+  text-align: center;
+}
+
+.t-align-l{
+  text-align: left;
+}
+
+.pt-65{
+  padding-top: 65px;
+}
+
+.p-font-sm{
+  font-family: 'PT Serif Caption', serif;
+  font-size: 14px;
+}
+
+.ml-25{
+  margin-left: 25%;
+}
+
+.ml-50{
+  margin-left: 50%;
+}
+
+.mr-25 {
+  margin-right: 25%;
+}
+
+.hr-50{
+  width: 50%;
+}
+
+.hr-color-main{
+  background: RGBA(64, 64, 122, .5);
+}
+
+.wd-50{
+  width: 50%;
 }

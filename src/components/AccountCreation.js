@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import NavigationBar from './Navbar';
 import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
-import fire from '../config/fbConfig';
+
 
 class AccountCreation extends Component{
     
