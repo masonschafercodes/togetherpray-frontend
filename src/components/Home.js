@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import NavigationBar from './Navbar';
 import { Jumbotron, Button } from 'reactstrap';
 import firebase from 'firebase';
+
+// eslint-disable-next-line
 import fire from '../config/fbConfig';
 
 

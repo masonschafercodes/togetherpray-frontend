@@ -27,6 +27,7 @@ export default class NewRequest extends Component{
             e.preventDefault();
             var title = { title };
             var request = { request };
+            // eslint-disable-next-line
             const response = await fetch("http://localhost:5000/requests", {
                 method: 'POST',
                 headers: {

@@ -27,8 +27,6 @@ export default class PrayerRequest extends Component{
 
     render(){
 
-        console.log(this.state.data);
-
         return(
         <Fragment>
                 {this.state.data.map ((dataRendered) => (

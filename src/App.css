@@ -184,8 +184,9 @@ body{
 }
  
 .prayer-bg{
-  background-color: #AEA8A8;
-  opacity: .5;
+  background-color: #40407a;
+  opacity: .7;
+  box-shadow: 5px 5px 10px black;
 }
 
 .color-wht{
