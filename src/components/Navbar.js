@@ -23,7 +23,7 @@ import firebase from 'firebase';
                         <a href="/" onClick={() => firebase.auth().signOut()}><strong>{firebase.auth().currentUser.displayName} &#8676;</strong></a>
                       </div>
                     :
-                      <a href="/login">Login</a>
+                      <a href="/login">Login &#8677;</a>
                 }
 
                 </li>

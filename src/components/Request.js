@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom';
 import NavigationBar from './Navbar';
 import { Button } from 'reactstrap';
 import PrayerRequest from './PrayerRequest';
 
 import firebase from 'firebase';
+import { Redirect } from 'react-router';
 
 class Request extends Component{
     state={isSignedIn: true};
