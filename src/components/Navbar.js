@@ -30,7 +30,6 @@ import firebase from 'firebase';
                 <li><img src="https://i.ibb.co/KKBgBMJ/praytogether.png" alt="togetherpray app logo" /></li>
                 <li><a href="/">Home</a></li>
                 <li><a href="/request">Request</a></li>
-                <li><a href="/read">Read</a></li>
             </ul>
           </div>
         );
