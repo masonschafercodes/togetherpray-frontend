@@ -90,7 +90,7 @@ export default class PrayerRequest extends Component{
                                         <FormGroup>
                                             <Input type="text" className="p-font-sm" name="comment" onChange={this.handleChange.bind(this)} placeholder="Enter Comment..." />
                                         </FormGroup>
-                                        <Button color="info" type='submit'>Add Comment</Button>
+                                        <Button color="info" className="p-font-sm" type='submit'>Add Comment</Button>
                                     </Form>
                                 </span>
                             </label>
