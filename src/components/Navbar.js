@@ -6,6 +6,8 @@ import firebase from 'firebase';
   class NavigationBar extends Component {
     state={isSignedIn: false};
 
+    
+
     componentDidMount = () => {
       firebase.auth().onAuthStateChanged(user => {
           this.setState({isSignedIn:!!user})

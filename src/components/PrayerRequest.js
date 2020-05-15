@@ -64,8 +64,20 @@ export default class PrayerRequest extends Component{
                                 />
                                 {' '}<span className="p-font-sm pt-25 post-text-color">Posted By: {dataRendered.username === "" ? 'Anonymous' : dataRendered.username}</span>
                             </label>
+                            <div>
+                                <hr className="hr-50" />
+                                <h5 className="caption-font pt-15">Comments: </h5>
+                                {this.state.commentsData.map((comments) => (
+                                    <div key={comments.comment_id} className="p-font-sm">
+                                        {comments.title === dataRendered.title ?  <p style={{fontSize: '16px', color: 'lightgrey'}} className="pt-15"><b>{comments.username}</b></p> : null}
+                                        {comments.title === dataRendered.title ?  <p className="display-i">- {comments.comment}</p> : null} 
+
+                                    </div>
+                                ))}                           
+                            </div>
                             <label className="display-b pt-25">
                                 <span>
+                                    <hr className="hr-color-white" />
                                     <p className='p-font-sm pt-25'>Show your love and add a comment...</p>
                                     <Form onSubmit={async(e) => {
                                         try {
@@ -94,17 +106,6 @@ export default class PrayerRequest extends Component{
                                     </Form>
                                 </span>
                             </label>
-                            <div>
-                                <hr className="hr-50" />
-                                <h5 className="caption-font pt-15">Comments: </h5>
-                                {this.state.commentsData.map((comments) => (
-                                    <div key={comments.comment_id} className="p-font-sm">
-                                        {comments.title === dataRendered.title ?  <p className="pt-15"><strong>{comments.username}</strong></p> : null}
-                                        {comments.title === dataRendered.title ?  <p className="display-i">{comments.comment}</p> : null} 
-
-                                    </div>
-                                ))}                           
-                            </div>
                         </div>
                     ))}
 

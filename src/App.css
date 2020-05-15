@@ -8,6 +8,16 @@ body{
   }
 }
 
+/* Footer Styling */
+.footer {
+  background-color: RGBA(64, 64, 122, .3);
+  color: #fff;
+  position: absolute;
+  left: 0; bottom: 0;
+  height: 160px; width: 100%;
+  overflow: hidden;
+}
+
 /* Jumbotron Styling */
 .jumbotron{
   background: RGBA(64, 64, 122, .5) !important;
@@ -43,7 +53,7 @@ body{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #fff;
+  background-color: RGB(255, 255, 255);
   position: fixed;
   top: 0;
   width: 100%;
@@ -181,6 +191,10 @@ body{
 
 .hr-color-main{
   background: RGBA(64, 64, 122, .5);
+}
+
+.hr-color-white{
+  background: RGBA(255, 255, 255, .5);
 }
 
 .wd-50{

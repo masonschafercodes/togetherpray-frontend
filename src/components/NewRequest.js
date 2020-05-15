@@ -6,8 +6,8 @@ import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import firebase from 'firebase';
 
 
-export default class NewRequest extends Component{
-    constructor(props){
+export default class NewRequest extends Component {
+    constructor(props) {
         super(props);
         this.state = {
             title: '',
@@ -18,10 +18,10 @@ export default class NewRequest extends Component{
     }
 
     handleChange(event) {
-        this.setState({[event.target.name]: event.target.value});
-        this.setState({[event.target.name]: event.target.value});
-        this.setState({[event.target.name]: event.target.value});
-      }
+        this.setState({ [event.target.name]: event.target.value });
+        this.setState({ [event.target.name]: event.target.value });
+        this.setState({ [event.target.name]: event.target.value });
+    }
 
 
     async onSubmitForm(e) {
@@ -37,9 +37,9 @@ export default class NewRequest extends Component{
                     'Accept': 'application/json',
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify({title: this.state.title, request: this.state.request, username: this.state.username})
+                body: JSON.stringify({ title: this.state.title, request: this.state.request, username: this.state.username })
             });
-            
+
             window.location = '/request';
 
         } catch (err) {
@@ -48,17 +48,17 @@ export default class NewRequest extends Component{
     }
 
     componentDidMount = () => {
-      firebase.auth().onAuthStateChanged(user => {
-          this.setState({isSignedIn:!!user})
-      })
+        firebase.auth().onAuthStateChanged(user => {
+            this.setState({ isSignedIn: !!user })
+        })
     }
-    render(){
-        return(
+    render() {
+        return (
             <div>
                 <nav>
                     <NavigationBar />
                 </nav>
-                {this.state.isSignedIn ? 
+                {this.state.isSignedIn ?
                     <div>
                         <h1 className="center caption-font pt-25 base-color">New Request</h1>
                         <hr className="hr-50 hr-color-main" />
@@ -69,21 +69,21 @@ export default class NewRequest extends Component{
                             </FormGroup>
                             <FormGroup >
                                 <Label for="requestTitle">Title</Label>
-                                <Input type='text' name='title' placeholder="Title for Request" maxLength={255} value={this.state.title} 
-                                onChange={this.handleChange.bind(this)} required/>
+                                <Input type='text' name='title' placeholder="Title for Request" maxLength={255} value={this.state.title}
+                                    onChange={this.handleChange.bind(this)} required />
                             </FormGroup>
                             <FormGroup className="pt-15">
                                 <Label for="requestBody">Prayer Request: </Label>
-                                <Input type='textarea' name='request' maxLength={255} placeholder='Put your prayer request here...' value={this.state.request} 
-                                onChange={this.handleChange.bind(this)} required/>
+                                <Input type='textarea' name='request' maxLength={255} placeholder='Put your prayer request here...' value={this.state.request}
+                                    onChange={this.handleChange.bind(this)} required />
                             </FormGroup>
                             <Button type='submit' className="request-button">Submit</Button>
                             <Button href='/request' className="request-button ml-15">Go back</Button>
                         </Form>
                     </div>
-                :
+                    :
                     <Redirect to='/login' />
-            }
+                }
             </div>
         )
     }
